@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getUserClient, getUserFromToken } from '../../../lib/supabaseServer';
+import { getUserClient, getUserFromToken } from '../../../../lib/supabaseServer';
 
 // DELETE /api/summaries/:id — delete a summary owned by the user (RLS enforced)
 export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {

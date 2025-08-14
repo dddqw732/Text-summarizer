@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { getUserClient, getUserFromToken } from '../../lib/supabaseServer';
+import { getUserClient, getUserFromToken } from '../../../lib/supabaseServer';
 
 // GET /api/summaries — list current user's summaries
 export async function GET(req: NextRequest) {
